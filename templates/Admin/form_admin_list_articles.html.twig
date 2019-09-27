@@ -1,0 +1,22 @@
+{% include ('Admin/_admin_head.html.twig') %}
+
+<body class="bodyAdmin">
+
+    <main class="adminMainList">
+
+        <h1 class="adminListTitle">Liste des ARTICLES</h1>
+
+        {% for article in articles %}
+
+            <p class="checkerboardList">{{ article.title }}</p>
+            <a class="checkerboardListModify" href="{{ path('admin_article_modify', {'id': article.id}) }}">  Modifier  </a>
+            <a class="checkerboardListDelete" href="{{ path('admin_article_delete', {'id': article.id}) }}">  Supprimer  </a>
+
+        {% endfor %}
+
+    </main>
+
+</body>
+
+</html>
+

@@ -1,0 +1,42 @@
+{% extends 'Admin/admin_base.html.twig' %}
+
+{% block adminMain %}
+
+        <section class="adminOne">
+
+                <h1 class="adminOneTitle">ARTICLE A MODIFIER</h1>
+
+                {{ form_start(formArticle) }}
+
+                <table class="table">
+                        <tr>
+                                <td class="column1">{{ form_label(formArticle.title, 'Titre :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                                <td  class="column2">{{ form_widget(formArticle.title, {'attr': {'class': 'input'}}) }}</td>
+                        </tr>
+                        <tr>
+                                <td class="column1">{{ form_label(formArticle.subheading, 'Sous-titre :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                                <td class="column2">{{ form_widget(formArticle.subheading, {'attr': {'class': 'input'}}) }}</td>
+                        </tr>
+                        <tr>
+                                <td class="column1">{{ form_label(formArticle.maintext, 'Corps du texte :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                                <td class="column2">{{ form_widget(formArticle.maintext, {'attr': {'class': 'adminTextArea'}}) }}</td>
+                        </tr>
+                        <tr>
+                                <td class="column1">{{ form_label(formArticle.image, 'Image :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                                <td class="column2">{{ form_widget(formArticle.image, {'attr': {'class': 'input'}}) }}</td>
+                        </tr>
+                        <tr>
+                                <td class="column1">{{ form_label(formArticle.published, 'Publié :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                                <td class="column2">{{ form_widget(formArticle.published, {'attr': {'class': 'input'}}) }}</td>
+                        </tr>
+                        <tr>
+                                <td class="column1"></td>
+                                <td class="column2">{{ form_widget(formArticle.enregistrer, {'attr': {'class': 'submit'}}) }}</td>
+                        </tr>
+                </table>
+
+                {{ form_end(formArticle) }}
+
+        </section>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block main %}
+
+    <section class="sectionArticles">
+
+        {#Cette section sera dynamique#}
+        {#Seules les 3 derniers articles seront mis en avant sur la homepage#}
+
+        <div class="titlesection">
+            Articles
+        </div>
+
+
+        <div class="loopitems">
+
+            {% for article in articles %}
+
+                <div class="oneArticle {% if loop.index is odd %}info{% else %}info2{% endif %}">
+                    <div class="oneArticleText">
+                        <h3 class="articlesTitle">{{ article.title }}</h3>
+                        <h4 class="articlesSubTitle">{{ article.subheading }}</h4>
+                        <p  class="articlesText">{{ article.maintext }}</p>
+                    </div>
+                    <div class="oneArticleImage">
+                        <img src="{{ asset('assets/img/uploads/articles/' ~ article.image) }}" class="img-fluid" alt="{{ article.title }}">
+                    </div>
+                    {#<h3 class="articlesTitle">{{ article.title }}</h3>
+                    <h4 class="articlesSubTitle">{{ article.subheading }}</h4>
+                    <p  class="articlesText">{{ article.maintext }}</p>
+                    <img src="{{ asset('assets/img/uploads/articles/' ~ article.image) }}" alt="">#}
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+
+{% endblock %}

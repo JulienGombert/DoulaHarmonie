@@ -1,0 +1,42 @@
+{% extends 'Admin/admin_base.html.twig' %}
+
+{% block adminMain %}
+
+    <section class="adminOne">
+
+        <h1 class="adminOneTitle">NEWS A MODIFIER</h1>
+
+        {{ form_start(formNews) }}
+
+        <table class="table">
+            <tr>
+                <td class="column1">{{ form_label(formNews.title, 'Titre :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td  class="column2">{{ form_widget(formNews.title, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formNews.subheading, 'Sous-titre :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formNews.subheading, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formNews.maintext, 'Corps du texte :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formNews.maintext, {'attr': {'class': 'adminTextArea'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formNews.image, 'Image :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formNews.image, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formNews.published, 'Publié :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formNews.published, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1"></td>
+                <td class="column2">{{ form_widget(formNews.enregistrer, {'attr': {'class': 'submit'}}) }}</td>
+            </tr>
+        </table>
+
+        {{ form_end(formNews) }}
+
+    </section>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+
+/*CSS footer*/
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: $bleuoutremer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /*background-color: lightskyblue;*/
+  height: 100px;
+  line-height: 100px;
+  color : $roseclair;
+}
+
+.instasvg {
+  width: 60px;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px)  {
+
+}

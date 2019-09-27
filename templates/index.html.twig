@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Julien Gombert" />
+    <meta name="description" content="Ce site présente d'Amélie Cassaigne épouse Gombert. Amélie est doula" />
+    <meta name="keywords" content="doula, bordeaux, soutien, accompagnement, natalité, périnatalité, postpartum, allaitement, parentalité, maternité" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav class="headerTop">
+
+            <h1 class="logoDoulaAmelie">Doula Amélie</h1>
+
+            <img src="" alt="">
+
+            <ul class="navBar">
+
+                <li>A propos</li>
+                <li>Articles</li>
+                <li>Actualités</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Mon espace</li>
+
+            </ul>
+
+        </nav>
+
+        <div class="headerMiddle">
+            <h1 class="headerMiddleText">
+                FOND À TROUVER
+                <br>
+                FLAT DESIGN OU
+                <br>
+                AUTRE CHOSE
+            </h1>
+        </div>
+
+        <div class="headerBottom">
+            <h1 class="headerBottomTitle">
+                Une doula est une femme accompagne les parents dans la continuité, dans une relation de confiance, de complicité et d'intimité.
+            </h1>
+            <p class="headerBottomText">
+                Parce que vous avez des interrogations sur l'expérience que vous allez vivre
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="sectionAboutDoulaAndMe">
+
+            {#Cette section sera statique#}
+
+            <div class="titlesection">
+                A propos
+            </div>
+
+
+            <div class="articlesAboutDoulaAndMe">
+                <h1 class="articlesTitle">Lorem ipsum 1</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+            <div class="articlesAboutDoulaAndMe">
+                <h1 class="articlesTitle">Lorem ipsum 2</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+            <div class="articlesAboutDoulaAndMe">
+                <h1 class="articlesTitle">Lorem ipsum 3</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+
+        </section>
+
+
+        <section class="sectionArticles">
+
+            {#Cette section sera dynamique#}
+            {#Seules les 3 derniers articles seront mis en avant sur la homepage#}
+
+            <div class="titlesection">
+                Articles
+            </div>
+
+
+            <div class="articles">
+                <h1 class="articlesTitle">Lorem ipsum 1</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+            <div class="articles">
+                <h1 class="articlesTitle">Lorem ipsum 1</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+            <div class="articles">
+                <h1 class="articlesTitle">Lorem ipsum 1</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /><span>Accusantium animi consequuntur dignissimos distinctio ea eligendi eos et, ex, explicabo fuga quo sed. Ad illum repellendus reprehenderit temporibus vel? Accusamus aliquid culpa eaque esse facilis iste perspiciatis sit voluptates.</span></p>
+            </div>
+
+        </section>
+
+
+        <section class="sectionServices">
+
+            {#Cette section sera statique#}
+
+            <div class="titlesection">
+                Principaux services proposés
+            </div>
+
+            <div class="articlesServices">
+                <h1 class="articlesTitle">Lorem ipsum 1</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span><br /></p>
+            </div>
+
+            <div class="articlesServices">
+                <h1 class="articlesTitle">Lorem ipsum 2</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span></p>
+            </div>
+
+            <div class="articlesServices">
+                <h1 class="articlesTitle">Lorem ipsum 3</h1>
+                <h2 class="articlesSubTitle">Lorem ipsum dolor sit amet, consectetur.</h2>
+                <p class="articlesText"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dicta doloremque ducimus ea esse, iste itaque labore laboriosam minima non odio quaerat quisquam quod sequi sunt ullam veniam veritatis?</span><br /><span>Accusamus accusantium adipisci aliquid aspernatur at aut corporis culpa doloremque dolores eaque et eveniet, exercitationem fugit, ipsum laboriosam libero magnam, maiores odio qui quia quis quos similique sit suscipit tenetur.</span></p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+        <ul>
+            <li><img src="{{ asset('assets/img/instagram.png') }}" width="50px" alt="L'image est le logo d'Instagram" class="instasvg">
+            </li>
+            <li>Contact</li>
+            <li>LOGO</li>
+            <li>Facebook</li>
+            <li>Disclaimer & copyright</li>
+        </ul>
+    </footer>
+
+
+
+</body>
+
+</html>

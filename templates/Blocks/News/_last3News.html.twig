@@ -1,0 +1,28 @@
+<section class="threenews">
+
+    <div class="titlesection">
+        Mes 3 dernières actualités
+    </div>
+
+    <div class="loopitems">
+
+        {% for news in news %}
+
+            <div class="oneNews {% if loop.index is odd %}info{% else %}info2{% endif %}">
+                <div class="oneArticleText">
+                    <h3 class="articlesTitle">{{ news.title }}</h3>
+                    <h4 class="articlesSubTitle">{{ news.subheading }}</h4>
+                    <p class="articlesText">{{ news.maintext }}</p>
+                </div>
+                <div class="oneArticleImage">
+                    <img src="{{ asset('assets/img/uploads/news/' ~ news.image) }}" class="img-fluid" alt="">
+                </div>
+
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

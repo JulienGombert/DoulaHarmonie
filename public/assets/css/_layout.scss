@@ -1,0 +1,325 @@
+
+/*CSS section AboutDoulaAndMe*/
+
+
+.sectionAboutDoulaAndMe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: $fondblanc;
+}
+
+.titlesection {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: $roseclair;
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+.articlesAboutDoulaAndMe {
+  width: 27%;
+  background-color: $roseclair;
+  font-weight: 100;
+  font-size: large;
+  margin: 20px 0;
+}
+
+.articlesTitle{
+  font-weight: 100;
+  font-size: xx-large;
+  color : $grisfonce;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+.articlesSubTitle{
+  font-weight: 100;
+  font-size: x-large;
+  color : $grisfonce;
+  margin-bottom: 5px;
+}
+.articlesText{
+  font-weight: 100;
+  font-size: large;
+  color : $grisfonce;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+/*CSS section Articles*/
+
+.sectionArticles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: $fondblanc;
+}
+
+.titlesection {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: $bleuoutremer;
+  color : #f5e2df;
+}
+
+.articles {
+  width: 27%;
+  background-color: $roseclair;
+  margin: 20px 0;
+}
+
+
+
+/*CSS section Services*/
+
+.sectionServices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #f5e2df;
+}
+
+.titlesectionServices {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: $roseclair;
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+.articlesServices {
+  width: 27%;
+  background-color: $roseclair;
+  margin: 20px 0;
+}
+
+
+/*CSS pour afficher les 3 derniers articles sur la homepage*/
+
+.loopitems {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $fondblanc;
+}
+
+.oneArticle, .oneNews {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.info {
+  margin-left: 50%;
+  margin-right: 10%;
+  color: $bleuoutremer;
+  background-color: $roseclair;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: large;
+}
+
+.info2 {
+  margin-right: 50%;
+  margin-left: 10%;
+  text-align: right;
+  color: $bleuoutremer;
+  background-color: $roseclair;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: large;
+  !*flex-direction: row-reverse;*!
+}*/
+
+.info, .info2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*border: solid 1px black;*/
+  color: $bleuoutremer;
+  font-size: large;
+}
+
+.info2 {
+  flex-direction: row-reverse;
+}
+
+.oneArticleText, .oneArticleImage{
+  width: 45%;
+  margin: 10px auto;
+  background-color: $roseclair;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+
+.oneArticleImage{
+  background-color: $fondblanc;
+}
+
+.img-fluid {
+  max-height: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+
+
+.linkDisclaimer {
+  text-decoration: none;
+  color: $roseclair;
+}
+
+.linkDisclaimer:hover {
+  font-size: larger;
+}
+
+.disclaimer {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: $bleuoutremer;
+  font-size: smaller;
+  background-color: $rosefonce;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.disclaimer h1 {
+  letter-spacing: 0.2em;
+  font-size: 25px;
+}
+
+.disclaimer p {
+  text-align: left;
+  padding-right: 20px;
+}
+
+
+
+/*Top button*/
+#top{
+  /* border: solid 0px red; */
+  /* border-color: blue; */
+  background-color: $rosefonce;
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#top svg{
+  width: 40px;
+}
+
+#top svg path:nth-child(2){
+  fill: $fondblanc;
+}
+
+#top svg path:nth-child(2){
+  fill: $fondblanc;
+}
+
+
+#user_envoyer {
+  margin: 0 15em;
+  color : $bleuoutremer;
+}
+
+#fos_user_registration_form, .bgcwhite {
+  background-color: $fondblanc;
+
+}
+
+#fos_user_registration_form div {
+  padding-top: 20px;
+  margin-left: 100px;
+  color: $bleuoutremer;
+}
+
+.submitButtonFormRegister {
+  margin-left: 100px;
+  background-color: $fondblanc;
+  margin-top: 50px ;
+  margin-bottom: 100px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+
+  .articlesAboutDoulaAndMe {
+    width: 90%;
+    background-color: $roseclair;
+  }
+  .articles {
+    width: 27%;
+    background-color: $roseclair;
+  }
+
+ /* .info, .info2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    font-size: medium;
+    text-align: left;
+  }*/
+
+  .info, .info2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: $bleuoutremer;
+    font-size: smaller;
+  }
+
+
+
+  .oneArticleText, .oneArticleImage{
+    width: 90%;
+    margin: 10px auto;
+    background-color: $roseclair;
+    padding: 10px 10px;
+    border-radius: 25px;
+  }
+
+  .oneArticleImage{
+    display: none;
+  }
+
+
+
+}

@@ -1,0 +1,153 @@
+.bodyAdmin {
+  background: $rosefonce;
+}
+
+.adminMain {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: inherit;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.adminMainList {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $bleuoutremer;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: $bleuoutremer;
+}
+
+.checkerboard {
+  height: 10vh;
+  line-height: 10vh;
+  width: 40%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border: solid 10px $bleuoutremer;
+  text-align: center;
+  background-color: $roseclair;
+  margin: 5vh 0;
+  color: $bleuoutremer;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.checkerboardList {
+  height: 50px;
+  line-height: 50px;
+  width: 55%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid 1px $bleuoutremer;
+  text-align: left;
+  background-color: $roseclair;
+  margin: 5px 0;
+  padding-left: 30px;
+}
+
+.adminListTitle {
+  color : $roseclair;
+  text-align: center;
+  width: 100%;
+}
+
+.checkerboardListModify, .checkerboardListDelete {
+  height: 50px;
+  line-height: 50px;
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid 1px $bleuoutremer;
+  background-color: $roseclair;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.adminOne {
+  /*background-color: white;*/
+}
+
+.adminOneTitle {
+  color : $bleuoutremer;
+  text-align: center;
+  width: 100%;
+}
+
+.adminLabel {
+  color : $bleuoutremer;
+  width: 100%;
+  text-align: right;
+}
+
+.input {
+  width: 100%;
+  background-color: $roseclair;
+}
+.adminTextArea {
+  width: 100%;
+  min-height: 500px;
+  background-color: $roseclair;
+}
+
+.table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.column1 {
+  width: 20%;
+  text-align: right;
+  align-content: flex-start;
+}
+.column2{
+  width: 80%;
+  text-align: right;
+  height: auto;
+}
+.table tr {
+  vertical-align: top;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+
+  .adminMainList {
+    width: 98%;
+  }
+
+  .checkerboard {
+    height: 8vh;
+    line-height: 8vh;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: solid 3px $bleuoutremer;
+    text-align: center;
+    margin: 1vh 0;
+  }
+
+  .checkerboardList{
+    padding-left: 0;
+    font-size: smaller;
+
+  }
+
+  .checkerboardListModify, .checkerboardListDelete{
+    font-size: smaller;
+  }
+
+
+}

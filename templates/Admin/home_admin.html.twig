@@ -1,0 +1,17 @@
+
+{% extends 'Admin/admin_base.html.twig' %}
+
+{% block adminMain %}
+
+    <section class="adminMain">
+        <a href="{{ path('admin_list_articles') }}" class="checkerboard"><div>Modifier les ARTICLES</div></a>
+        <a href="{{ path('admin_articles_form_insert') }}" class="checkerboard"><div>Ajouter un ARTICLE</div></a>
+        <a href="{{ path('admin_list_news') }}" class="checkerboard"><div>Modifier les NEWS</div></a>
+        <a href="{{ path('admin_news_form_insert') }}" class="checkerboard"><div>Ajouter une NEWS</div></a>
+        <a href="" class="checkerboard"><div>Modifier les SERVICES</div></a>
+        <a href="" class="checkerboard"><div>Ajouter un SERVICE</div></a>
+    </section>
+
+
+{% endblock %}
+

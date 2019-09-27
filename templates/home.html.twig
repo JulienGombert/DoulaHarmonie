@@ -1,0 +1,18 @@
+
+
+
+{% extends 'base.html.twig' %}
+
+{% block main %}
+
+    {% include 'PartialFiles/_staticHomepage.html.twig'%}
+
+    {% include 'Blocks/Articles/_last3Articles.html.twig' %}
+
+    {% include 'Blocks/News/_last3News.html.twig' %}
+
+    {% include 'Blocks/Services/_last3Services.html.twig' %}
+
+
+
+{% endblock %}

@@ -1,0 +1,540 @@
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0; }
+
+a, li {
+  list-style-type: none; }
+
+/*Variables SASS*/
+/*Couleurs*/
+/* Add a black background color to the top navigation */
+.navBar {
+  background-color: #F7CECE;
+  overflow: hidden; }
+
+/* Style the links inside the navigation bar */
+.navBar a {
+  float: left;
+  display: block;
+  color: #005C7D;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px; }
+
+/* Change the color of links on hover */
+.navBar a:hover {
+  background-color: #e9f4f4;
+  color: #D18E8E; }
+
+/* Add an active class to highlight the current page */
+.navBar a.active {
+  background-color: #F7CECE;
+  color: #D18E8E; }
+
+/* Hide the link that should open and close the topnav on small screens */
+.navBar .icon {
+  display: none; }
+
+.headerMiddle {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e9f4f4;
+  background-image: url("../img/coupleBoat.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.headerMiddleText {
+  color: #707070;
+  font-size: xx-large;
+  font-weight: 100;
+  text-align: center; }
+
+.headerBottom {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #F7CECE; }
+
+.headerBottomTitle {
+  width: 100%;
+  /*?*/
+  font-weight: 100;
+  font-size: 32px;
+  color: #707070;
+  margin: 10px 20px 0 20px; }
+
+.headerBottomText {
+  font-weight: 100;
+  font-size: 24px;
+  color: #707070;
+  margin: 0 20px 10px 20px; }
+
+.logoDoulaHarmonie {
+  width: 150px;
+  height: auto; }
+
+/* Media queries */
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  .headerBottomTitle {
+    font-size: 22px; }
+
+  .headerBottomText {
+    font-size: 18px; } }
+@media screen and (max-width: 600px) {
+  .headerBottomTitle {
+    font-size: 18px; }
+
+  .headerBottomText {
+    font-size: 14px; }
+
+  /* hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  .navBar a:not(:first-child) {
+    display: none; }
+
+  .navBar a.icon {
+    float: right;
+    display: block; }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .navBar.responsive {
+    position: relative; }
+
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #F7CECE; }
+
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+.bodyAdmin {
+  background: #D18E8E; }
+
+.adminMain {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: inherit;
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
+
+.adminMainList {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #005C7D;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #005C7D; }
+
+.checkerboard {
+  height: 10vh;
+  line-height: 10vh;
+  width: 40%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border: solid 10px #005C7D;
+  text-align: center;
+  background-color: #F7CECE;
+  margin: 5vh 0;
+  color: #005C7D;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.2em; }
+
+.checkerboardList {
+  height: 50px;
+  line-height: 50px;
+  width: 55%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid 1px #005C7D;
+  text-align: left;
+  background-color: #F7CECE;
+  margin: 5px 0;
+  padding-left: 30px; }
+
+.adminListTitle {
+  color: #F7CECE;
+  text-align: center;
+  width: 100%; }
+
+.checkerboardListModify, .checkerboardListDelete {
+  height: 50px;
+  line-height: 50px;
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid 1px #005C7D;
+  background-color: #F7CECE;
+  margin: 5px 0;
+  text-align: center; }
+
+.adminOne {
+  /*background-color: white;*/ }
+
+.adminOneTitle {
+  color: #005C7D;
+  text-align: center;
+  width: 100%; }
+
+.adminLabel {
+  color: #005C7D;
+  width: 100%;
+  text-align: right; }
+
+.input {
+  width: 100%;
+  background-color: #F7CECE; }
+
+.adminTextArea {
+  width: 100%;
+  min-height: 500px;
+  background-color: #F7CECE; }
+
+.table {
+  width: 90%;
+  margin: 0 auto; }
+
+.column1 {
+  width: 20%;
+  text-align: right;
+  align-content: flex-start; }
+
+.column2 {
+  width: 80%;
+  text-align: right;
+  height: auto; }
+
+.table tr {
+  vertical-align: top; }
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .adminMainList {
+    width: 98%; }
+
+  .checkerboard {
+    height: 8vh;
+    line-height: 8vh;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: solid 3px #005C7D;
+    text-align: center;
+    margin: 1vh 0; }
+
+  .checkerboardList {
+    padding-left: 0;
+    font-size: smaller; }
+
+  .checkerboardListModify, .checkerboardListDelete {
+    font-size: smaller; } }
+/*CSS section AboutDoulaAndMe*/
+.sectionAboutDoulaAndMe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #e9f4f4; }
+
+.titlesection {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: #F7CECE;
+  font-weight: 100;
+  font-size: xx-large; }
+
+.articlesAboutDoulaAndMe {
+  width: 27%;
+  background-color: #F7CECE;
+  font-weight: 100;
+  font-size: large;
+  margin: 20px 0; }
+
+.articlesTitle {
+  font-weight: 100;
+  font-size: xx-large;
+  color: #707070;
+  margin-bottom: 10px;
+  padding-top: 30px; }
+
+.articlesSubTitle {
+  font-weight: 100;
+  font-size: x-large;
+  color: #707070;
+  margin-bottom: 5px; }
+
+.articlesText {
+  font-weight: 100;
+  font-size: large;
+  color: #707070;
+  padding-bottom: 30px; }
+
+/*CSS section Articles*/
+.sectionArticles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #e9f4f4; }
+
+.titlesection {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: #005C7D;
+  color: #f5e2df; }
+
+.articles {
+  width: 27%;
+  background-color: #F7CECE;
+  margin: 20px 0; }
+
+/*CSS section Services*/
+.sectionServices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #f5e2df; }
+
+.titlesectionServices {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  align-items: center;
+  background-color: #F7CECE;
+  font-weight: 100;
+  font-size: xx-large; }
+
+.articlesServices {
+  width: 27%;
+  background-color: #F7CECE;
+  margin: 20px 0; }
+
+/*CSS pour afficher les 3 derniers articles sur la homepage*/
+.loopitems {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #e9f4f4; }
+
+.oneArticle, .oneNews {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+/*.info {
+  margin-left: 50%;
+  margin-right: 10%;
+  color: $bleuoutremer;
+  background-color: $roseclair;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: large;
+}
+
+.info2 {
+  margin-right: 50%;
+  margin-left: 10%;
+  text-align: right;
+  color: $bleuoutremer;
+  background-color: $roseclair;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: large;
+  !*flex-direction: row-reverse;*!
+}*/
+.info, .info2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*border: solid 1px black;*/
+  color: #005C7D;
+  font-size: large; }
+
+.info2 {
+  flex-direction: row-reverse; }
+
+.oneArticleText, .oneArticleImage {
+  width: 45%;
+  margin: 10px auto;
+  background-color: #F7CECE;
+  padding: 10px 10px;
+  border-radius: 25px; }
+
+.oneArticleImage {
+  background-color: #e9f4f4; }
+
+.img-fluid {
+  max-height: 100%;
+  height: auto;
+  border-radius: 25px; }
+
+.linkDisclaimer {
+  text-decoration: none;
+  color: #F7CECE; }
+
+.linkDisclaimer:hover {
+  font-size: larger; }
+
+.disclaimer {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #005C7D;
+  font-size: smaller;
+  background-color: #D18E8E;
+  padding-top: 10px;
+  padding-left: 20px; }
+
+.disclaimer h1 {
+  letter-spacing: 0.2em;
+  font-size: 25px; }
+
+.disclaimer p {
+  text-align: left;
+  padding-right: 20px; }
+
+/*Top button*/
+#top {
+  /* border: solid 0px red; */
+  /* border-color: blue; */
+  background-color: #D18E8E;
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  display: flex;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+#top svg {
+  width: 40px; }
+
+#top svg path:nth-child(2) {
+  fill: #e9f4f4; }
+
+#top svg path:nth-child(2) {
+  fill: #e9f4f4; }
+
+#user_envoyer {
+  margin: 0 15em;
+  color: #005C7D; }
+
+#fos_user_registration_form, .bgcwhite {
+  background-color: #e9f4f4; }
+
+#fos_user_registration_form div {
+  padding-top: 20px;
+  margin-left: 100px;
+  color: #005C7D; }
+
+.submitButtonFormRegister {
+  margin-left: 100px;
+  background-color: #e9f4f4;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .articlesAboutDoulaAndMe {
+    width: 90%;
+    background-color: #F7CECE; }
+
+  .articles {
+    width: 27%;
+    background-color: #F7CECE; }
+
+  /* .info, .info2 {
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     padding: 0 5px;
+     font-size: medium;
+     text-align: left;
+   }*/
+  .info, .info2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: #005C7D;
+    font-size: smaller; }
+
+  .oneArticleText, .oneArticleImage {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #F7CECE;
+    padding: 10px 10px;
+    border-radius: 25px; }
+
+  .oneArticleImage {
+    display: none; } }
+/*CSS footer*/
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #005C7D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /*background-color: lightskyblue;*/
+  height: 100px;
+  line-height: 100px;
+  color: #F7CECE; }
+
+.instasvg {
+  width: 60px;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=main.css.map */

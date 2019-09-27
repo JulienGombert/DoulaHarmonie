@@ -1,0 +1,27 @@
+<section class="threearticles">
+
+    <div class="titlesection">
+        Mes 3 derniers articles
+    </div>
+
+    <div class="loopitems">
+
+        {% for article in articles %}
+
+            <div class="oneArticle {% if loop.index is odd %}info{% else %}info2{% endif %}">
+                <div class="oneArticleText">
+                    <h3 class="articlesTitle">{{ article.title }}</h3>
+                    <h4 class="articlesSubTitle">{{ article.subheading }}</h4>
+                    <p  class="articlesText">{{ article.maintext }}</p>
+                </div>
+                <div class="oneArticleImage">
+                    <img src="{{ asset('assets/img/uploads/articles/' ~ article.image) }}" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+

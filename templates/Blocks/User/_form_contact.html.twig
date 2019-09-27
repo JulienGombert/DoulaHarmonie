@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block formcontact %}
+
+    <section class="adminOne">
+
+    {{ form_start(formUser) }}
+
+        <table class="table">
+            <tr>
+                <td class="column1">{{ form_label(formUser.lastname, 'Nom :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td  class="column2">{{ form_widget(formUser.lastname, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formUser.firstname, 'Prénom :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formUser.firstname, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formUser.username, 'Nom d\'utilisateur :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td  class="column2">{{ form_widget(formUser.username, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formUser.email, 'E-mail :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formUser.email, {'attr': {'class': 'input'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formUser.context, 'Contexte :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td  class="column2">{{ form_widget(formUser.context, {'attr': {'class': 'radio'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1">{{ form_label(formUser.comment, 'Corps du texte :', {'label_attr': {'class': 'adminLabel'}}) }}</td>
+                <td class="column2">{{ form_widget(formUser.comment, {'attr': {'class': 'adminTextArea'}}) }}</td>
+            </tr>
+            <tr>
+                <td class="column1"></td>
+                <td class="column2">{{ form_widget(formUser.envoyer, {'attr': {'class': 'submit'}}) }}</td>
+            </tr>
+        </table>
+
+    {{ form_end(formUser) }}
+
+</section>
+
+{% endblock %}
+
